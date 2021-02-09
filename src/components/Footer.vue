@@ -12,9 +12,9 @@
 .footer_style {
   height: 50px;
   position: fixed;
-  left: 0;
   bottom: 0;
-  width: 100%;
+  left: 0;
+  width: 75%;
   background-color: #338a3e;
 }
 .footer_button {
@@ -24,3 +24,4 @@
   font: black; 
 }
 </style>
+\

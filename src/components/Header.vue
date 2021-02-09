@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+  <div class="header_style">
     <b-navbar class="header_style" toggleable="lg" top="fixed" id="navbar">
       <b-navbar-brand>
         <router-link to="/" class="d-flex align-items-center-text-light ml-2">
-          <h2 class="ml-2 mt-2 text-dark">Brent Jones</h2>
+          <h2 class="namesake ml-2 mt-2 text-dark">Brent Jones</h2>
         </router-link>
       </b-navbar-brand>
 
@@ -54,11 +54,17 @@
 .header_style {
   background-color: #66bb6a;
   border-top: solid #338a3e 25px;
+  width: 100%;
 }
 
 .navItems {
     background-color: #2196f3;
     border: solid white 1px;
+}
+
+.namesake {
+  font-size: 32px; 
+  font-family: impact; 
 }
 
 .logo_text {

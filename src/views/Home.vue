@@ -1,7 +1,7 @@
 <template>
-  <div class="bglight splash_image">
+  <div>
     <div class="m-3 text-left text-dark carousel_border textBoxStyle">
-      <h4 class="textHeader text-center py-5">Javier Pérez Sandoval</h4>
+      <h2 class="textHeader text-center py-5"> words words words  </h2>
       <ul class="p-3">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -11,19 +11,57 @@
           eget, faucibus ac urna. Curabitur tempus placerat sodales.
         </p>
         <p>
-Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet. Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis, mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum, enim mauris pulvinar dui, blandit sodales sapien velit non purus. Curabitur eget euismod lacus.
+          Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam
+          nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis
+          pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet.
+          Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis,
+          mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium
+          mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum,
+          enim mauris pulvinar dui, blandit sodales sapien velit non purus.
+          Curabitur eget euismod lacus.
         </p>
         <p>
-Nunc pharetra, enim in interdum egestas, metus nisi placerat velit, at viverra dolor nulla sit amet sapien. In hac habitasse platea dictumst. Suspendisse potenti. Cras tincidunt eros lectus. Praesent ornare nibh ante, eu porta ligula vestibulum placerat. Etiam commodo tortor sapien, vel malesuada leo sagittis eget. Sed cursus velit quis nunc cursus sagittis. Aliquam maximus elit quis sem pharetra maximus. Morbi arcu ipsum, volutpat sit amet malesuada sit amet, scelerisque non lectus. Nunc metus dolor, pulvinar in fringilla sit amet, convallis pulvinar tortor. Nulla at mauris laoreet, porttitor justo at, ullamcorper diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          Nunc pharetra, enim in interdum egestas, metus nisi placerat velit, at
+          viverra dolor nulla sit amet sapien. In hac habitasse platea dictumst.
+          Suspendisse potenti. Cras tincidunt eros lectus. Praesent ornare nibh
+          ante, eu porta ligula vestibulum placerat. Etiam commodo tortor
+          sapien, vel malesuada leo sagittis eget. Sed cursus velit quis nunc
+          cursus sagittis. Aliquam maximus elit quis sem pharetra maximus. Morbi
+          arcu ipsum, volutpat sit amet malesuada sit amet, scelerisque non
+          lectus. Nunc metus dolor, pulvinar in fringilla sit amet, convallis
+          pulvinar tortor. Nulla at mauris laoreet, porttitor justo at,
+          ullamcorper diam. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus.
         </p>
         <p>
-Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet. Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis, mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum, enim mauris pulvinar dui, blandit sodales sapien velit non purus. Curabitur eget euismod lacus.
+          Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam
+          nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis
+          pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet.
+          Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis,
+          mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium
+          mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum,
+          enim mauris pulvinar dui, blandit sodales sapien velit non purus.
+          Curabitur eget euismod lacus.
         </p>
         <p>
-Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet. Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis, mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum, enim mauris pulvinar dui, blandit sodales sapien velit non purus. Curabitur eget euismod lacus.
+          Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam
+          nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis
+          pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet.
+          Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis,
+          mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium
+          mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum,
+          enim mauris pulvinar dui, blandit sodales sapien velit non purus.
+          Curabitur eget euismod lacus.
         </p>
         <p>
-Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet. Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis, mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum, enim mauris pulvinar dui, blandit sodales sapien velit non purus. Curabitur eget euismod lacus.
+          Sed vehicula porta risus non gravida. Etiam et rhoncus lacus. Aliquam
+          nisi mauris, tincidunt nec lectus quis, tempor molestie metus. Duis
+          pulvinar nunc nec leo pharetra, sit amet convallis tortor imperdiet.
+          Cras vel imperdiet libero. Vestibulum vitae mollis dolor. In mattis,
+          mi quis interdum vulputate, ipsum risus malesuada arcu, ut pretium
+          mauris velit ut dolor. Ut condimentum, nunc id facilisis vestibulum,
+          enim mauris pulvinar dui, blandit sodales sapien velit non purus.
+          Curabitur eget euismod lacus.
         </p>
       </ul>
     </div>
@@ -80,6 +118,8 @@ export default {
 
 .textHeader {
   background-color: #2196f3;
+  font-size: 32px;
+  font-family: Impact;
 }
 
 .textBoxStyle {
