@@ -144,5 +144,8 @@ export default {
   justify-content: center;
   font-size: 80px;
   position: sticky;
+  background-color: #2196f3;
+  font-family: Impact;
+  width: 100%;
 }
 </style>

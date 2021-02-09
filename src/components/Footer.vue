@@ -1,27 +1,17 @@
 <template>
-  <div id="app">
-    <div class="footer_style">
-    </div>
+  <div class="header_style">
+
   </div>
 </template>
 
-<script>
-</script>
 
-<style>
-.footer_style {
-  height: 50px;
+<style scoped>
+
+.header_style {
+  background-color: #66bb6a;
+  border-top: solid #338a3e 25px;
+  width: 100%;
   position: fixed;
   bottom: 0;
-  left: 0;
-  width: 75%;
-  background-color: #338a3e;
 }
-.footer_button {
-  height: 100%;
-  width: 25%;
-  background-color: white;
-  font: black; 
-}
-</style>
-\
+</style> 

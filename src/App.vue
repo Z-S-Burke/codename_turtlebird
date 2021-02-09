@@ -4,20 +4,20 @@
   <div id="appDesktop">
     <Header/>
     <router-view id="mainVue" />
-    <!--<Footer/>-->
+    <Footer/>
   </div>
 </div> 
 </template>
 
 <script>
 import Header from "@/components/Header.vue";
-/*import Footer from "@/components/Footer.vue";*/
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "home",
   components: {
-    Header 
-    /*Footer*/
+    Header,
+    Footer
   }
 };
 </script> 
