@@ -12,8 +12,7 @@
         <div v-on:click="setup" class="flower flowerText">
           <h2>flower.exe</h2>
         </div>
-      </div>
-      <div class="banner">
+
         <div class="slide">
           <h2>EXHIBIT D</h2>
         </div>
@@ -23,19 +22,13 @@
         <div class="slide">
           <h2>EXHIBIT F</h2>
         </div>
-      </div>
-      <div class="banner">
         <div class="slide">
           <h2>EXHIBIT G</h2>
         </div>
         <div class="slide">
           <h2>EXHIBIT H</h2>
         </div>
-        <div class="slide">
-          <h2>EXHIBIT I</h2>
-        </div>
       </div>
-      <div class="footer"></div>
     </div>
   </div>
 </template>
@@ -64,16 +57,12 @@ export default {
 .banner {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 750px;
+  width: 80%;
   height: 250px;
   margin-top: 10px;
-}
-
-.footer {
-  width: 800px;
-  height: 180px;
 }
 
 .slide {
@@ -83,8 +72,10 @@ export default {
   justify-content: center;
   border: solid 1px;
   height: 100%;
-  width: 32.5%;
+  width: 20%;
   transition: transform 0.4s;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .flower {
@@ -94,15 +85,18 @@ export default {
   justify-content: center;
   border: solid 1px;
   height: 100%;
-  width: 32.5%;
+  width: 20%;
+  margin-left: 1px;
+  margin-right: 1px;
   background-color: white;
   transition: transform 0.4s;
 }
 
 .flower:hover {
   background-image: url("https://i.gifer.com/MaEZ.gif");
+  background-repeat: no-repeat;
   background-size: contain;
-  color: red;
+  color: aquamarine;
 }
 
 .flowerText {
@@ -113,21 +107,10 @@ export default {
 .slide:hover {
   font-weight: bold;
   background-image: url("https://thumbs.gfycat.com/UnsungWindingCuttlefish-size_restricted.gif");
-  background-size: contain;
+  background-size: cover;
   background-position: fixed;
   background-repeat: no-repeat;
   color: blue;
-}
-
-.human_mech:hover {
-  background-image: url("https://thumbs.gfycat.com/UnsungWindingCuttlefish-size_restricted.gif");
-  background-size: contain;
-  background-position: fixed;
-  background-repeat: no-repeat;
-  color: blue;
-}
-
-.page_container {
 }
 
 .content_container {
