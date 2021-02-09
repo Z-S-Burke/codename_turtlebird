@@ -5,8 +5,8 @@
         <p>flower</p>
         <p style="color: black">.exe</p>
       </div>
+        <button v-on:click="setup"> CLICK </button>
       <div class="display">
-        <button v-on:click="setup"></button>
         <div class="menu">
           <div class="input">
             <button type="button">Style 1</button>
@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import Canvas from "@/components/Canvas.vue";
 
 export default {
   data() {
@@ -41,24 +40,9 @@ export default {
     };
   },
   methods: {
-    onSlideStart(slide) {
-      this.sliding = true;
-    },
-    onSlideEnd(slide) {
-      this.sliding = false;
-    },
     setup() {
-      console.log("function called");
-      console.log(this.fx);
-      console.log(this.fy);
-      let canvas = createCanvas(720, 400);
-      background(0);
-      stroke(255);
-      document.getElementById("displayCase").appendChild(canvas);
+      window.open("https://codepen.io/zsburke/pen/eYBzgVg", "_blank");    
     },
-  },
-  components: {
-    Canvas,
   },
 };
 
