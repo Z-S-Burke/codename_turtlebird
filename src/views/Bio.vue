@@ -12,7 +12,6 @@
         <div v-on:click="setup" class="flower flowerText">
           <h2>flower.exe</h2>
         </div>
-
         <div class="slide">
           <h2>EXHIBIT D</h2>
         </div>
