@@ -1,12 +1,21 @@
 
 <template>
-<div class="wholePage d-flex align-items-center justify-content-center"> 
-  <div id="appDesktop">
-    <Header/>
-    <router-view id="mainVue" />
-    <Footer/>
+  <div class="wholePage d-flex align-items-center justify-content-center">
+    <div v-if="mobileCheck()">
+      <div id="appDesktop">
+        <Header />
+        <router-view id="mainVue" />
+        <Footer />
+      </div>
+    </div>
+    <div v-if="!mobileCheck()">
+      <div id="appDesktop">
+        <Header />
+        <router-view id="mainVue" />
+        <Footer />
+      </div>
+    </div>
   </div>
-</div> 
 </template>
 
 <script>
@@ -17,8 +26,33 @@ export default {
   name: "home",
   components: {
     Header,
-    Footer
-  }
+    Footer,
+  },
+  data() {
+    return {
+      /* eslint-disable */
+      slide: 0,
+      sliding: null,
+      mobile: false,
+    };
+  },
+  created: {
+    function() {
+      this.mobileCheck();
+    },
+  },
+  methods: {
+    mobileCheck() {
+      if (window.innerWidth <= 760) {
+        this.mobile = true;
+        console.log("yep, mobile");
+      } else {
+        this.mobile = false;
+        console.log("nope, desktop");
+      }
+      return this.mobile;
+    },
+  },
 };
 </script> 
 
@@ -30,7 +64,20 @@ export default {
   text-align: center;
   color: #2c3e50;
   height: 100%;
-  width: 75%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#appMobile {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
