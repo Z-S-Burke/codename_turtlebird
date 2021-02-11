@@ -46,8 +46,8 @@
             <p class="fade-in2">Ruby</p>
             <p class="fade-in3">VBASIC</p>
           </div>
-          <ul class="p-3 introText">
-            <h2 class="splashText">Brent Jones</h2>
+          <ul class="p-3 introText mb-5 pb-5">
+            <h2 class="splashTextName text-center">Brent Jones</h2>
             <br />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
@@ -180,6 +180,14 @@ export default {
   flex-direction: column;
   padding-left: 20px;
   width: 60%;
+}
+
+.splashTextName {
+  font-size: 9.5vw;
+  font-weight: bold;
+  display: flex;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 
 .splashTextMobile {
