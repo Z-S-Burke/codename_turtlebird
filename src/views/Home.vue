@@ -47,7 +47,7 @@
             <p class="fade-in3">VBASIC</p>
           </div>
           <ul class="p-3 introText">
-            <h2>Here is a generic intro sentence</h2>
+            <h2 class="splashText">Brent Jones</h2>
             <br />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
