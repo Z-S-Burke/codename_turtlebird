@@ -223,7 +223,7 @@ export default {
   animation: fadeIn2 ease 7.5s;
   border-bottom: double white 50px;
   border-left: double #2196f3 50px;
-  background: linear-gradient(0.25turn, #2196f3, #ebf8e1, white);
+  background: linear-gradient(0.25turn, #2196f3, #6ec6ff, white);
   -webkit-animation: fadeIn2 ease 7.5s;
   -moz-animation: fadeIn2 ease 7.5s;
   -o-animation: fadeIn2 ease 7.5s;
@@ -239,15 +239,15 @@ export default {
 }
 
 .fade-in3 {
-  animation: fadeIn3 ease 10s;
+  animation: fadeIn3 ease 7.5s;
   border-bottom: double white 50px;
   border-left: double #f69d3c 50px;
 
-  background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, white);
-  -webkit-animation: fadeIn3 ease 10s;
-  -moz-animation: fadeIn3 ease 10s;
-  -o-animation: fadeIn3 ease 10s;
-  -ms-animation: fadeIn3 ease 10s;
+  background: linear-gradient(0.25turn, #f69d3c, #f7ba6a, white);
+  -webkit-animation: fadeIn3 ease 7.5s;
+  -moz-animation: fadeIn3 ease 7.5s;
+  -o-animation: fadeIn3 ease 7.5s;
+  -ms-animation: fadeIn3 ease 7.5s;
 }
 @keyframes fadeIn3 {
   0% {
