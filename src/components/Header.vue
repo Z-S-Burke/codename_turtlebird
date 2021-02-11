@@ -53,7 +53,6 @@
 
 .header_style {
   background-color: #66bb6a;
-  border-top: solid #338a3e 25px;
   width: 100%;
 }
 
