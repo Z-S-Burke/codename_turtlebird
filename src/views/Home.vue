@@ -186,8 +186,6 @@ export default {
   font-size: 9.5vw;
   font-weight: bold;
   display: flex;
-  padding-left: 50px;
-  padding-bottom: 50px;
 }
 
 .splashTextMobile {
@@ -202,6 +200,7 @@ export default {
   width: 40%;
   height: 70vh;
   margin-right: 50px;
+  overflow: scroll;
   /*
   border-bottom: double #98ee99 50px;
   border-left: double #98ee99 50px;
