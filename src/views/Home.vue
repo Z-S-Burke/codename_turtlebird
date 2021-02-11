@@ -44,7 +44,7 @@
           <div class="splashText">
             <p class="fade-in1">C++</p>
             <p class="fade-in2">Ruby</p>
-            <p class="fade-in3">Visual Basic</p>
+            <p class="fade-in3">VBASIC</p>
           </div>
           <ul class="p-3 introText">
             <h2>Here is a generic intro sentence</h2>
