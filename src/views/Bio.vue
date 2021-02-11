@@ -1,31 +1,64 @@
 <template>
-  <div class="page_container">
-    <div class="content_container">
-      <p class="intro">THINGS I HAVE DONE</p>
-      <div class="banner">
-        <div class="slide">
-          <h2>EXHIBIT A</h2>
+  <div>
+    <div v-if="mobileCheck()">
+      <div class="content_container">
+        <p class="intro">THINGS I HAVE DONE</p>
+        <div class="mobileBanner">
+          <div class="mobileSlide">
+            <h2>EXHIBIT A</h2>
+          </div>
+          <div class="mobileSlide">
+            <h2>EXHIBIT B</h2>
+          </div>
+          <div v-on:click="setup" class="mobileSlide">
+            <h2>flower.exe</h2>
+          </div>
+          <div class="mobileSlide">
+            <h2>EXHIBIT D</h2>
+          </div>
+          <div class="mobileSlide">
+            <h2>EXHIBIT E</h2>
+          </div>
+          <div class="mobileSlide">
+            <h2>EXHIBIT F</h2>
+          </div>
+          <div class="mobileSlide">
+            <h2>EXHIBIT G</h2>
+          </div>
+          <div class="mobileSlide">
+            <h2>EXHIBIT H</h2>
+          </div>
         </div>
-        <div class="slide">
-          <h2>EXHIBIT B</h2>
-        </div>
-        <div v-on:click="setup" class="flower flowerText">
-          <h2>flower.exe</h2>
-        </div>
-        <div class="slide">
-          <h2>EXHIBIT D</h2>
-        </div>
-        <div class="slide">
-          <h2>EXHIBIT E</h2>
-        </div>
-        <div class="slide">
-          <h2>EXHIBIT F</h2>
-        </div>
-        <div class="slide">
-          <h2>EXHIBIT G</h2>
-        </div>
-        <div class="slide">
-          <h2>EXHIBIT H</h2>
+      </div>
+    </div>
+    <div v-if="!mobileCheck()">
+      <div class="content_container">
+        <p class="intro">THINGS I HAVE DONE</p>
+        <div class="banner">
+          <div class="slide">
+            <h2>EXHIBIT A</h2>
+          </div>
+          <div class="slide">
+            <h2>EXHIBIT B</h2>
+          </div>
+          <div v-on:click="setup" class="flower flowerText">
+            <h2>flower.exe</h2>
+          </div>
+          <div class="slide">
+            <h2>EXHIBIT D</h2>
+          </div>
+          <div class="slide">
+            <h2>EXHIBIT E</h2>
+          </div>
+          <div class="slide">
+            <h2>EXHIBIT F</h2>
+          </div>
+          <div class="slide">
+            <h2>EXHIBIT G</h2>
+          </div>
+          <div class="slide">
+            <h2>EXHIBIT H</h2>
+          </div>
         </div>
       </div>
     </div>
@@ -39,14 +72,23 @@ export default {
       /* eslint-disable */
       slide: 0,
       sliding: null,
-      tam: 450,
-      fx: 750,
-      fy: 750,
+      mobile: false,
     };
+  },
+  created: {
+    function() {
+      this.mobileCheck();
+    },
   },
   methods: {
     setup() {
       window.open("https://codepen.io/zsburke/pen/eYBzgVg", "_blank");
+    },
+    mobileCheck() {
+      if (window.innerWidth <= 760) {
+        this.mobile = true;
+      }
+      return this.mobile;
     },
   },
 };
@@ -59,9 +101,18 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   height: 250px;
   margin-top: 10px;
+}
+
+.mobileBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: around;
+  width: 90%;
+  height: 90%;
 }
 
 .slide {
@@ -77,6 +128,19 @@ export default {
   margin-bottom: 15px;
 }
 
+.mobileSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+  height: 250px;
+  width: 100%;
+  transition: transform 0.4s;
+  margin-top: 15px;
+  margin-bottom: 15px;  
+}
+
 .flower {
   display: flex;
   flex-direction: column;
@@ -90,6 +154,7 @@ export default {
   background-color: white;
   transition: transform 0.4s;
 }
+
 
 .flower:hover {
   background-image: url("https://i.gifer.com/MaEZ.gif");
@@ -116,7 +181,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
 }
 
 .intro {

@@ -39,7 +39,7 @@
     <div v-if="!mobileCheck()">
       <div class="text-left text-dark textBoxStyle">
         <div
-          class="d-flex flex-row align-items-center .d-none .d-sm-none .d-md-none .d-lg-none .d-xl-none"
+          class="d-flex flex-row align-items-center justify-content-around"
         >
           <div class="splashText">
             <p class="fade-in1">C++</p>
@@ -168,13 +168,13 @@ export default {
 
 .textBoxStyle {
   background-color: white;
+  border-bottom: double black 50px;
 }
 
 .splashText {
-  font-size: 8.5vw;
+  font-size: 9.5vw;
   font-weight: bold;
   margin-right: 50px;
-  height: 80vh;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -190,8 +190,11 @@ export default {
 }
 
 .introText {
-  width: 50%;
+  width: 40%;
   margin-right: 50px;
+  border-bottom: double #98ee99 50px;
+  border-left: double #98ee99 50px;
+  border-radius: 5%;
 }
 
 .fade-in1 {
