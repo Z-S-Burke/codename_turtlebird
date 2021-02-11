@@ -2,10 +2,12 @@
   <div>
     <div v-if="mobileCheck()">
       <div class="splashTextMobile">
-        <p class="fade-in1">C++</p>
-        <p class="fade-in2">Ruby</p>
-        <p class="fade-in3">Visual Basic</p>
+        <p class="fade-in1Mobile">C++</p>
+        <p class="fade-in2Mobile">Ruby</p>
+        <p class="fade-in3Mobile">Visual Basic</p>
       </div>
+      <h3>Here is a generic intro sentence. </h3>
+      <br />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
         placerat ultricies justo a lobortis. Proin ac suscipit sem. Ut dignissim
@@ -38,15 +40,15 @@
     </div>
     <div v-if="!mobileCheck()">
       <div class="text-left text-dark textBoxStyle">
-        <div
-          class="d-flex flex-row align-items-center justify-content-around"
-        >
+        <div class="d-flex flex-row align-items-center justify-content-around">
           <div class="splashText">
             <p class="fade-in1">C++</p>
             <p class="fade-in2">Ruby</p>
             <p class="fade-in3">Visual Basic</p>
           </div>
           <ul class="p-3 introText">
+            <h2>Here is a generic intro sentence</h2>
+            <br />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
               placerat ultricies justo a lobortis. Proin ac suscipit sem. Ut
@@ -168,17 +170,16 @@ export default {
 
 .textBoxStyle {
   background-color: white;
-  border-bottom: double black 50px;
 }
 
 .splashText {
   font-size: 9.5vw;
   font-weight: bold;
-  margin-right: 50px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  margin-left: 3vw;
+  padding-left: 20px;
+  width: 60%;
 }
 
 .splashTextMobile {
@@ -191,14 +192,19 @@ export default {
 
 .introText {
   width: 40%;
+  height: 70vh;
   margin-right: 50px;
+  /*
   border-bottom: double #98ee99 50px;
   border-left: double #98ee99 50px;
-  border-radius: 5%;
+  border-radius: 5%; */
 }
 
 .fade-in1 {
   animation: fadeIn1 ease 5s;
+  border-bottom: double white 50px;
+  border-left: double #98ee99 50px;
+  background: linear-gradient(0.25turn, #98ee99, #ebf8e1, white);
   -webkit-animation: fadeIn1 ease 5s;
   -moz-animation: fadeIn1 ease 5s;
   -o-animation: fadeIn1 ease 5s;
@@ -215,6 +221,9 @@ export default {
 
 .fade-in2 {
   animation: fadeIn2 ease 7.5s;
+  border-bottom: double white 50px;
+  border-left: double #2196f3 50px;
+  background: linear-gradient(0.25turn, #2196f3, #ebf8e1, white);
   -webkit-animation: fadeIn2 ease 7.5s;
   -moz-animation: fadeIn2 ease 7.5s;
   -o-animation: fadeIn2 ease 7.5s;
@@ -231,12 +240,64 @@ export default {
 
 .fade-in3 {
   animation: fadeIn3 ease 10s;
+  border-bottom: double white 50px;
+  border-left: double #f69d3c 50px;
+
+  background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, white);
   -webkit-animation: fadeIn3 ease 10s;
   -moz-animation: fadeIn3 ease 10s;
   -o-animation: fadeIn3 ease 10s;
   -ms-animation: fadeIn3 ease 10s;
 }
 @keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in1Mobile {
+  animation: fadeIn1 ease 5s;
+  -webkit-animation: fadeIn1 ease 5s;
+  -moz-animation: fadeIn1 ease 5s;
+  -o-animation: fadeIn1 ease 5s;
+  -ms-animation: fadeIn1 ease 5s;
+}
+@keyframes fadeIn1Mobile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in2Mobile {
+  animation: fadeIn2 ease 7.5s;
+  -webkit-animation: fadeIn2 ease 7.5s;
+  -moz-animation: fadeIn2 ease 7.5s;
+  -o-animation: fadeIn2 ease 7.5s;
+  -ms-animation: fadeIn2 ease 7.5s;
+}
+@keyframes fadeIn2Mobile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in3Mobile {
+  animation: fadeIn3 ease 10s;
+  -webkit-animation: fadeIn3 ease 10s;
+  -moz-animation: fadeIn3 ease 10s;
+  -o-animation: fadeIn3 ease 10s;
+  -ms-animation: fadeIn3 ease 10s;
+}
+@keyframes fadeIn3Mobile {
   0% {
     opacity: 0;
   }
